@@ -1,0 +1,11 @@
+[Unit]
+Description=arp log
+[Service]
+User=kirill
+WorkingDirectory=/home/kirill
+ExecStart=/home/kirill/arp.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
